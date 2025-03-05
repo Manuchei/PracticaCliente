@@ -6,6 +6,6 @@ import { ProductViewComponent } from './pages/product-view/product-view.componen
 export const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: 'home', component: ProductListComponent },
-    { path: 'user/:_id', component: ProductViewComponent },
+    { path: 'product/:_id', component: ProductViewComponent },
     { path: '**', component: Page404Component },
 ]
