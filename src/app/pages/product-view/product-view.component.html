@@ -1,0 +1,18 @@
+<section>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="{{miProducto.image}}" class="rounded-circle border border-primary"
+                    style="width: 250px; height: 250px;">
+            </div>
+
+            <div class="col-md-6">
+                <h4>{{miProducto.name}}</h4>
+                <p><strong>Descripcion: </strong>{{miProducto.description}}</p>
+                <p><strong>Precio: </strong>{{miProducto.price}}</p>
+                <p><strong>Categoria: </strong>{{miProducto.category}}</p>
+                <app-botonera [parent]="'view'" [_id]="miProducto._id"></app-botonera>
+            </div>
+        </div>
+    </div>
+</section>

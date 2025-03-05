@@ -1,0 +1,8 @@
+<div class=" card shadow border-1 border text-center p-3">
+    <img [src]="miProducto.image" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px;">
+    <h4>{{miProducto.name}}</h4>
+    <p>{{miProducto.price}}, {{miProducto.category}}</p>
+    <h3>{{miProducto.activate}}</h3>
+    <app-botonera [parent]="'card'" [_id]="miProducto._id"></app-botonera>
+    
+

@@ -1,0 +1,12 @@
+<section class="container mt-3">
+    <div class="row g-3">
+        <article class="col-12 col-md-6 col-lg-4"
+            *ngFor="let product of arrProducts | paginate: {itemsPerPage: 5, currentPage: page}">
+            <app-product-card [miProducto]="product"></app-product-card>        
+        </article>
+    </div>
+    <div class="d-flex justify-content-center mt-3 ">
+        <pagination-controls (pageChange)="page = $event" previousLabel="Anterior"
+            nextLabel="Siguiente"></pagination-controls>
+    </div>
+</section>
